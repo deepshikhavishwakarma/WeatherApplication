@@ -1,0 +1,52 @@
+<!-- <div class="container">
+  <div class="upper-data"> -->
+
+  <!-- <img src="" alt="" *ngIf="14>15">
+  <img src="" alt="" *ngIf="14<=15"> -->
+
+
+  
+<!-- </div>
+  <div class="lower-data">
+  <h1>Hi deep</h1>
+  </div> -->
+
+
+
+  <!-- <div>
+    <p>City: {{ data.name }}</p>
+    <p>Temperature: {{ data.main.temp }}°C</p>
+    <p>Weather: {{ data.weather[0].description }}</p>
+  </div>
+
+</div> -->
+
+
+
+
+
+<div class="main-conatiner mt-5" style="height: 100vh;">
+  <div class="container">
+    <h1>Weather App</h1>
+    <form (submit)="getWeather()">
+      <label for="city" class="mt-5">Enter City Name:</label>
+      <input  [(ngModel)]="city" class="mt-3"  name="city" placeholder="Enter Your Name" required>
+      <button type="submit" class="btn btn-success mt-2">Search</button>
+    </form>
+
+    <div *ngIf="weatherData" class="weather-info">
+        <img src="{{imageurl}}" alt="">
+      <h2>Weather in
+        {{ weatherData.name }},
+        {{ weatherData.sys.country }}
+      </h2>
+      <p>Temperature:
+        {{ weatherData.main.temp }}°C
+      </p>
+      <p>Weather:
+        {{ weatherData.weather[0].description }}
+      </p>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

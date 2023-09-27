@@ -1,0 +1,15 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.main-conatiner{
+    margin: 0 auto;
+    padding: 30px 80px 30px 80px;
+    border: 1px solid black;
+    max-width: 400px;
+    max-height: 600px;
+    background-color: powderblue;
+    // background-image: url('https://i.gifer.com/origin/b2/b2fdaa03f03ef1b2c5b1b34e0ec19b3c_w200.webp');
+    //background-image: url('https://media4.giphy.com/media/QRhtqYeEywJI4/200.webp?cid=ecf05e47xrawo22zw533jd26q6peqrf4xbwideu1hg2cv3u1&ep=v1_gifs_search&rid=200.webp&ct=g');
+    background-size: cover;
+    text-align: center;
+    border-radius: 30px;
+}
